@@ -7,7 +7,9 @@ authors = [
     { name = "lcwllmr", email = "159539641+lcwllmr@users.noreply.github.com" }
 ]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "jax>=0.7.0",
+]
 
 [project.scripts]
 kop2024 = "kop2024:main"
@@ -15,3 +17,8 @@ kop2024 = "kop2024:main"
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.1",
+]
